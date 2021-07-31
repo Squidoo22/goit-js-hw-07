@@ -13,8 +13,8 @@ function createBoxes(amount) {
     for (let i = 0; i < amount; i += 1) {
         let div = document.createElement('div');
         let color = Math.floor(Math.random() * 16777215).toString(16);
-        div.style.width = '30px';
-        div.style.height = '30px';
+        div.style.width = `${30 + i * 10}px`;
+        div.style.height = `${30 + i * 10}px`;;
         div.style.backgroundColor = `#${color}`;
         boxes.push(div)
     }
